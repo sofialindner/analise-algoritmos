@@ -5,6 +5,8 @@ import java.util.List;
 public class Pedido {
     private List<Produto> produtos;
     private ServicoEntrega servicoDeEntrega;
+    private int numero;
+    private String nomeCliente;
 
     public Pedido(){
         produtos = new ArrayList<>();
@@ -14,6 +16,22 @@ public class Pedido {
         setProdutos(produtos);
         setServicoDeEntrega(servicoDeEntrega);
         produtos = new ArrayList<>();
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public List<Produto> getProdutos() {

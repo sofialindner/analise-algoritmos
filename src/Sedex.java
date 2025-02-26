@@ -1,6 +1,6 @@
 package src;
 
-public class Sedex extends ServicoEntrega {
+public class Sedex implements ServicoEntrega {
     @Override
     public double calcularFrete(double pesoTotal) {
         if (pesoTotal < 0.5) {

@@ -1,5 +1,5 @@
 package src;
 
-public abstract class ServicoEntrega {
-    public abstract double calcularFrete(double pesoTotal);
+public interface ServicoEntrega {
+    public double calcularFrete(double pesoTotal);
 }

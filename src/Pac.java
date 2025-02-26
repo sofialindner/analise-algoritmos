@@ -1,6 +1,6 @@
 package src;
 
-public class Pac extends ServicoEntrega {
+public class Pac implements ServicoEntrega {
     @Override
     public double calcularFrete(double pesoTotal) {
         if (pesoTotal < 1) {
